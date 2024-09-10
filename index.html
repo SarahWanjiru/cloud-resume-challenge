@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="C:\Users\ADMIN\OneDrive\Desktop\Cloudresume.html\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Additional styles can be added here if needed */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .left-section {
+            width: 34%;
+            background-color: #ccccdb;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-content {
+            text-align: left;
+        }
+
+        .profile {
+            margin-bottom: 20px;
+        }
+
+        .profile .image {
+            margin-bottom: 10px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+
+        .name {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .career {
+            font-size: 18px;
+            color: #777;
+            margin: 0;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .main-title {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .contact-info ul li {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info ul li i {
+            margin-right: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .skills-section {
+            margin-bottom: 20px;
+        }
+
+        .skills-section .main-title {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .skills-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .skills-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills-section .skill-title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #6397f8;
+        }
+
+        .right-section {
+            width: 65%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-main-content {
+            text-align: left;
+        }
+
+        .right-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .sect {
+            margin-bottom: 30px;
+        }
+
+        .about .para {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .experince .tl-title,
+        .education .tl-title,
+        .awards .tl-title,
+        .project .tl-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .education .tl-title-2,
+        .project .tl-title-2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .timeline {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .left-tl-content {
+            width: 30%;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .left-tl-content p {
+            font-size: 14px;
+            color: #777;
+            margin: 0;
+        }
+
+        .tl-title {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .tl-title-2 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .right-tl-content {
+            width: 70%;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-content">
+        <!-- section to the left side -->
+        <section class="left-section">
+            <div class="left-content">
+                <div class="profile">
+                    <div class="image">
+                        <img src="avatar.jpg" alt="profile photo">
+                    </div>
+                    <!-- name of the Person and their profession -->
+                    <h2 class="name">SARAH WANJIRU NDUNG'U</h2>
+                    <p class="career">Junior Cloud Engineer</p>
+                </div>
+                <div class="contact-info">
+                    <h3 class="main-title">Contact Info</h3>
+                    <ul>
+                        <!-- phone number -->
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            0720171697
+                        </li>
+                        <!-- email address -->
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            shirowbedan7@gmail.com
+                        </li>
+                        <!-- linkedin -->
+                        <li>
+                            <i class="fa fa-linkedin-square"></i>
+                            www.linkedin.com/in/sarahndungu/
+                        </li>
+                    </ul>
+                </div>
+                <!-- skills section starts here -->
+                <div class="skills-section">
+                    <h3 class="main-title">Skills</h3>
+                    <ul>
+                        <li>
+                            <p class="skill-title">AWS Services</p>
+                            <div class="progress-bar">
+                                <div class="progress js-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Python</p>
+                            <div class="progress-bar">
+                                <div class="progress python-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Cloud Architecture</p>
+                            <div class="progress-bar">
+                                <div class="progress aws-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Security and Compliance</p>
+                            <div class="progress-bar">
+                                <div class="progress s-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Communication</p>
+                            <div class="progress-bar">
+                                <div class="progress h-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Linux</p>
+                            <div class="progress-bar">
+                                <div class="progress l-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Problem Solving</p>
+                            <div class="progress-bar">
+                                <div class="progress l-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Collaboration</p>
+                            <div class="progress-bar">
+                                <div class="progress l-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Continuous Learning</p>
+                            <div class="progress-bar">
+                                <div class="progress l-progress"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end of skills section -->
+                <!-- references section starts here-->
+                <div class="references-section">
+                    <h3 class="main-title">References</h3>
+                    <div class="referee">
+                        <h6 class="sub-title">George Githiri</h6>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                0792532518
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="referee">
+                        <h6 class="sub-title">Cynthia Wambui</h6>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                0717265950
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="referee">
+                        <h6 class="sub-title">Agnes Nduta</h6>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                0712227589
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of references section -->
+            </div>
+        </section>
+        <!-- right section -->
+        <section class="right-section">
+            <div class="right-main-content">
+                <!-- about me section  -->
+                <section class="about sect">
+                    <h2 class="right-title">Professional Summary</h2>
+                    <p class="para">
+                        Experienced AWS Cloud Practitioner with a proven track record of hands-on learning and application.
+                        Throughout rigorous training, I've cultivated a deep understanding of AWS services and cloud computing principles, translating theoretical knowledge into practical expertise.
+                        My journey includes immersive lab sessions, where I've designed, deployed, and optimized cloud solutions across various AWS services. This hands-on experience extends beyond training, as I've continued to explore advanced features and configurations post-training.
+                        With a focus on cloud architecture, security, and scalability, I'm equipped to tackle complex challenges and drive innovation in cloud-based environments.
+                    </p>
+                </section>
+                <!-- Experience section begins here -->
+                <section class="experince sect">
+                    <h2 class="right-title">Work Experience</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Hands-On Training Experience</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <p class="para">
+                                    During my AWS training, I actively participated in hands-on lab sessions where I gained practical experience in deploying and managing AWS services. This included setting up virtual servers with EC2, configuring storage solutions with S3, managing databases with RDS, configuring access controls with IAM, and monitoring resources with CloudWatch.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Post-Training Hands-On Lab</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <p class="para">
+                                    After completing my training, I continued to engage in hands-on labs to reinforce my skills and deepen my understanding of AWS services. I utilized resources such as AWS Free Tier and AWS Educate to explore advanced features and experiment with different configurations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- education section starts here -->
+                <section class="education sect">
+                    <h2 class="right-title">Education</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">ALX Training Kenya</h5>
+                            <p class="para">April 2024 - July 2024</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Artificial Intelligence Career Essentials</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">AWS Training and Certification</h5>
+                            <p class="para">April 2024 - June 2024</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">AWS Certified Solutions Architect</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">eMobilis Technology Training Institute / AWS re/Start Training</h5>
+                            <p class="para">January 2024 - April 2024</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">AWS Certified Cloud Practitioner</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Enaiposha Girls High School</h5>
+                            <p class="para">2016 - 2019</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Kenya Certificate of Secondary Education</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Matathia Primary School</h5>
+                            <p class="para">2008 - 2015</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Kenya Certificate of Primary Education</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- certificates and awards section starts here -->
+                <section class="awards sect">
+                    <h2 class="right-title">Certificates</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">AWS Certified Cloud Practitioner</h5>
+                            <p class="para">AWS Training and Certification, April 2024 - June 2024</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="project sect">
+                    <h2 class="right-title">Project</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Designing a multi-tier Web Application</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <p class="para">Designed and deployed a multi-tier web application on AWS using
+                                    EC2 for compute, S3 for storage, RDS for database, and IAM for
+                                    access control.
+                                    • Configured load balancing and auto-scaling to ensure high
+                                    availability and scalability of the application.
+                                    • Implemented security measures such as encryption, access control,
+                                    and monitoring using AWS services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Deploy a simple web application</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <p class="para">In this project, I aim to deploy a simple web application on Amazon
+                                    EC2 instances using Terraform. Terraform will be utilized to automate
+                                    the provisioning of infrastructure resources, including EC2 instances,
+                                    security groups, and networking components. The web application
+                                    will be deployed on the EC2 instances, showcasing the power of
+                                    Infrastructure as Code (IaC) and the ease of managing resources with
+                                    Terraform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
